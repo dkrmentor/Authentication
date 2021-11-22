@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script>
+        var firebaseConfig = {
+
+            apiKey: "AIzaSyAdIydBYh-G6c7WxF1r4fylDFuW2l1wQeY",
+            authDomain: "authentication-7ea68.firebaseapp.com",
+            projectId: "authentication-7ea68",
+            storageBucket: "authentication-7ea68.appspot.com",
+            messagingSenderId: "980088566033",
+            appId: "1:980088566033:web:80cad723044421f3301cb0",
+            measurementId: "G-LQJKGED27V"
+
+        };
+
+
+        // Initialize Firebase
+
+        firebase.initializeApp(firebaseConfig);
+
+      
+
+    </script>
+
+</head>
+
+<body>
+    <div class="form">
+        <input type="email" id="email" placeholder="email">
+        <br>
+        <input type="password" id="password" placeholder="password">
+        <br>
+        <button onclick="signup()">
+            signup
+
+        </button>
+
+    </div>
+    <br>
+    <br>
+    <div class="form">
+        <input type="email" id="loginemail" placeholder="email">
+        <br>
+        <input type="password" id="loginpassword" placeholder="password">
+        <br>
+        <button onclick="signin()">
+            signin
+
+        </button>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
